@@ -1,0 +1,5 @@
+{
+  "name": "PDF to JPG Converter",
+  "description": "A simple and fast tool to convert PDF documents into high-quality JPG images with progress tracking and instant preview.",
+  "requestFramePermissions": []
+}
