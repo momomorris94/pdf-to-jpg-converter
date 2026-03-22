@@ -9,6 +9,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     
     permissions:
       contents: read
@@ -26,7 +27,7 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci --prefer-offline --no-audit
 
     - name: Build with GitHub Pages base path
       run: GITHUB_PAGES=true npm run build
